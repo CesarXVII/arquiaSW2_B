@@ -1,0 +1,21 @@
+# --- SERVER ---
+PORT=3000
+FRONTEND_URL=http://localhost:5173
+
+# --- DATABASE ---
+DATABASE_TYPE=postgres
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+DATABASE_USERNAME=postgres
+DATABASE_PASSWORD=12345678
+DATABASE_NAME=asistente_arqia
+
+# --- MAIL ---
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USER=angelo.jalp@gmail.com
+MAIL_PASS=zeowqlcpzmldtrbc
+
+APP_NAME=diagramador_inteligente_sw1_2parcial
+
+
