@@ -1,4 +1,4 @@
-import { IsString, IsEmail, MinLength, IsDateString, IsNotEmpty } from 'class-validator';
+import { IsString, IsEmail, MinLength, IsDateString, IsNotEmpty, IsBoolean, Equals } from 'class-validator';
 
 export class RegisterUsuarioDto {
   @IsNotEmpty()
@@ -24,4 +24,9 @@ export class RegisterUsuarioDto {
 
   @IsDateString()
   fechaNacimiento: Date;
+
+  @IsNotEmpty()
+  @IsBoolean()
+  @Equals(true, { message: 'Debe aceptar los términos y condiciones' })
+  acceptedTerms: boolean;
 }

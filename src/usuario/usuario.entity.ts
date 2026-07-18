@@ -72,4 +72,7 @@ export class Usuario {
 
   @OneToMany(() => Pago, (pago) => pago.usuario)
   pagos: Pago[];
+
+  @Column({ default: false })
+  acceptedTerms: boolean;
 }
